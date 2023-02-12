@@ -28,13 +28,10 @@
 
   }
 
-  z0{
+  zz{
     font-family: BuloExtraBlackItalic; 
-    color: rgb(255, 255, 255);
-    font-size: 55px;
-    -webkit-text-stroke-width: 2px;  
+    -webkit-text-stroke-width: 1.25px;  
     -webkit-text-stroke-color: rgb(0, 0, 0);
-    text-align: center;
 
   }
 
@@ -50,6 +47,14 @@
     -webkit-text-stroke-width: 0.8px;  
     -webkit-text-stroke-color: rgb(0, 0, 0);
   }
+
+  z2w{
+    font-family: BuloExtraBlackItalic; 
+    color: white;
+    -webkit-text-stroke-width: 0.8px;  
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+  }
+
 
   a{
     font-family: BuloExtraBlackItalic; 
@@ -76,18 +81,35 @@
     background-blend-mode: multiply;
   }
 
-  .page1column{
-    background-color: rgba(199, 23, 23, 0.63);
+  .pagecolumn{
+    background-color: rgba(92, 9, 9, 0.918);
     background-blend-mode: multiply;
-    width: 100px;
-    height: 500px;
     background-image: url('dark-honeycomb.png'); 
     border-radius: 60px;
+    min-height: 400px;
+    min-width: 300px;
+ /*
+    width: 100px;
+    height: 500px;
     margin-top: 45px;
     margin-left: 30px;
     margin-right: 30px;
+    */
   }
 
+  .textcolumn{
+    padding-top: 10px;
+    display: block; 
+    font-size: xx-large;
+  }
+
+
+.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    }
 
 
 
