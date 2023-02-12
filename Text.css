@@ -104,7 +104,26 @@
     display: block; 
     font-size: xx-large;
   }
+  
+  
+  .textcolumnlarge{
+    padding-top: 50px;
+    display: block; 
+    /*-webkit-text-stroke-width: 4.5px;  */
+  }
 
+  z000{
+    font-family: BuloExtraBlackItalic; 
+    color: white;
+    -webkit-text-stroke-width: 0.8px;  
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    font-size:4vw;
+
+  }
+  @media screen and (max-width: 800px) {
+    z000{
+        font-size:12vw;
+    }}
 
 .displayed {
     display: block;
@@ -113,6 +132,12 @@
     padding: 15px;
     }
 
+    .divtext {
+        display: table;
+        color: white;
+        font-family: impact;
+        font-size: 4.2vw;
+      }
 
 
   @font-face {
