@@ -80,6 +80,7 @@
     min-width: 300px;
     margin-top: 20px;
     margin-bottom: 20px;
+
   }
 
   .pagecolumn:hover {
@@ -95,13 +96,13 @@
     color: white;
     -webkit-text-stroke-width: 0.1vw;  
     -webkit-text-stroke-color: rgb(0, 0, 0);
-    font-size: 2.6vw;
+    font-size: 2.8vw;
   }
 
   b{
     font-family: BuloExtraBlackItalic; 
     color: white;
-    -webkit-text-stroke-width: 0.1vw;  
+    -webkit-text-stroke-width: 0.2vw;  
     -webkit-text-stroke-color: rgb(0, 0, 0);
     font-size: 2.5vw;
     display: block; 
@@ -112,9 +113,9 @@
   p{
     font-family: BuloExtraBlackItalic; 
     color: white;
-    -webkit-text-stroke-width: 0.05vw;  
+    -webkit-text-stroke-width: 0.08vw;  
     -webkit-text-stroke-color: rgb(0, 0, 0);
-    font-size: 1.25vw;
+    font-size: 1.5vw;
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -147,7 +148,8 @@
 
 
   .textcolumnlarge{
-    padding-top: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     display: block; 
     /*-webkit-text-stroke-width: 4.5px;  */
   }
@@ -171,7 +173,7 @@
     -webkit-text-stroke-width: 0.05vw;
     -webkit-text-stroke-color: rgba(162, 0, 0,0.5);
     color: white;
-    font-size:1.8vw;
+    font-size:2.2vw;
     display: block; 
     margin-top: 30px;
     margin-bottom: 50px;
