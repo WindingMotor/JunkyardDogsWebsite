@@ -126,16 +126,32 @@
     
   }
 
+  .videowrapper {
+    display: block;
+    overflow: hidden;
+    width: 30vw;
+    height: 18vw;
+    border-radius: 25px;
+    transform: translateZ(0px);
+    border: 3px solid;
+    border-color: rgba(162, 0, 0,0.5);
+    margin: 0 auto;
+   
+  }
+
+  .videowrapper:hover {
+    border: 3px solid;
+    border-color: rgba(162, 0, 0,0.8);
+  }
+
+
   .textcolumnlarge{
     padding-top: 100px;
     display: block; 
     /*-webkit-text-stroke-width: 4.5px;  */
   }
 
-  .video{
-    width: 560px;
-    height: 315px;
-  }
+
 
 
 
@@ -163,8 +179,12 @@
         padding-right: 25px;
         padding-bottom: 25px;
       }
+      .video{
+        width: 80vw;
+        height: 80vw;
     
-
+      }
+    
     
     
 }
@@ -185,7 +205,16 @@
 
       .mainbutton{
         font-family: BuloExtraBlackItalic; 
-        font-size: 100px;
+        color: white;
+        -webkit-text-stroke-width: 0.22vw;  
+        -webkit-text-stroke-color: rgb(0, 0, 0);
+        font-size:2vw;
+        display: block; 
+        max-width: 20rem;
+        max-height: 6rem;
+        min-width: 10rem;
+        min-height: 4rem;
+        
       }
 
   @font-face {
