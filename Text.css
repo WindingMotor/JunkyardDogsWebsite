@@ -115,9 +115,10 @@
     color: white;
     -webkit-text-stroke-width: 0.1vw;  
     -webkit-text-stroke-color: rgb(0, 0, 0);
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     padding-left: 25px;
     padding-right: 25px;
+    padding-bottom: 20px;
   }
 
 
