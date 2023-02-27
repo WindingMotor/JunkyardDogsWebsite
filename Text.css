@@ -242,6 +242,18 @@
 
   }
 
+  ty{
+    src: url('OrginTech.otf') format('opentype');
+    font-size: 35px;
+    font-family: Origin Tech Demo;
+    color: white;
+    -webkit-text-stroke-width: 0.15vw;  
+    -webkit-text-stroke-color: rgb(106, 0, 0);
+    font-size:7vw;
+  }
+
+
+
   @media screen and (max-width: 700px) {
     z000{
         font-size:13vw;
@@ -275,8 +287,12 @@
         a1{
           font-size: 5.2vw; 
         -webkit-text-stroke-width: 1.5px;  
-
-  }
+      }
+      
+      ty{
+        -webkit-text-stroke-width: 0.2vw;  
+        font-size:9.2vw;
+      }
   
 }
 
@@ -300,16 +316,6 @@
         font-family: impact;
         font-size: 4.2vw;
         
-      }
-
-      ty{
-        src: url("OrginTech.otf") format("opentype");
-        font-size: 35px;
-        font-family: Origin Tech Demo;
-        color: white;
-        -webkit-text-stroke-width: 0.15vw;  
-        -webkit-text-stroke-color: rgb(106, 0, 0);
-        font-size:5.2vw;
       }
 
 
