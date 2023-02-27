@@ -243,7 +243,7 @@
   }
 
   ty{
-    src: url('OrginTech.otf') format('opentype');
+    src: url('OrginTech.ttf');
     font-size: 35px;
     font-family: Origin Tech Demo;
     color: white;
