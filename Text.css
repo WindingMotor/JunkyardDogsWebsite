@@ -92,6 +92,13 @@
     box-shadow: 0 0 10px rgba(162, 0, 0,0.5);
   }
 
+  .slideshowimage{
+    border-radius: 50px;
+    
+    transform: 0 0 ;
+  }
+
+
 
 
   z2w{
@@ -270,8 +277,7 @@
         -webkit-text-stroke-width: 1.5px;  
 
   }
-    
-       
+  
 }
 
     .displayedchrg {
@@ -294,6 +300,16 @@
         font-family: impact;
         font-size: 4.2vw;
         
+      }
+
+      ty{
+        src: url("OrginTech.otf") format("opentype");
+        font-size: 35px;
+        font-family: Origin Tech Demo;
+        color: white;
+        -webkit-text-stroke-width: 0.15vw;  
+        -webkit-text-stroke-color: rgb(106, 0, 0);
+        font-size:5.2vw;
       }
 
 
