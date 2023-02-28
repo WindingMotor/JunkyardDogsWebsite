@@ -73,24 +73,7 @@
     background-blend-mode: multiply;
   }
 
-  .pagecolumn{
-    background-color: rgba(92, 9, 9, 0.918);
-    background-blend-mode: multiply;
-    background-image: url('dark-honeycomb.png'); 
-    border-radius: 60px;
-    min-height: 400px;
-    min-width: 300px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
 
-  }
-
-  .pagecolumn:hover {
-    background-color: rgba(92, 9, 9, 1);
-    border-radius: 65px;
-    box-shadow: 0 0 10px rgba(162, 0, 0,0.5);
-  }
 
   .slideshowimage{
     border-radius: 50px;
@@ -317,6 +300,24 @@
         
       }
 
+      .pagecolumn{
+        background-color: rgba(92, 9, 9, 0.918);
+        background-blend-mode: multiply;
+        background-image: url('dark-honeycomb.png'); 
+        border-radius: 60px;
+        min-height: 400px;
+        min-width: 300px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    
+      }
+
+      .pagecolumn:hover {
+        background-color: rgba(92, 9, 9, 1);
+        border-radius: 65px;
+        box-shadow: 0 0 10px rgba(162, 0, 0,0.5);
+      }
 
   @font-face {
     font-family: BuloExtraBlackItalic;
