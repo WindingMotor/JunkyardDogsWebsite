@@ -135,6 +135,18 @@
    
   }
 
+  .imagecenter{
+    display: block;
+    overflow: hidden;
+    width: 35vw;
+    height: 18vw;
+    border-radius: 25px;
+    transform: translateZ(0px);
+    border: 3px solid;
+    border-color: rgba(162, 0, 0,0.5);
+    margin: 0 auto;
+  }
+
   .footer {
     font-family: BuloExtraBlackItalic; 
     color: white;
@@ -234,8 +246,6 @@
     font-size:7vw;
   }
 
-
-
   @media screen and (max-width: 700px) {
     z000{
         font-size:13vw;
@@ -257,6 +267,11 @@
         height: 80vw;
     
       }
+      
+      .imagecenter{
+        width: 80vw;
+        height: 60vw;
+      }
       .mainbutton{
         margin-top: -10px;
         margin-bottom: 60px;
@@ -266,7 +281,7 @@
 
       }
 
-        a1{
+      a1{
           font-size: 5.2vw; 
         -webkit-text-stroke-width: 1.5px;  
       }
@@ -275,8 +290,8 @@
         -webkit-text-stroke-width: 0.2vw;  
         font-size:11.5vw;
       }
-  
-}
+
+    }
 
     .displayedchrg {
         display: block;
