@@ -350,10 +350,8 @@
         margin-bottom: 20px;
         padding-bottom: 15px;
         transition:0.25s; 
-        
-    
-    }
 
+    }
 
     .pagecolumn:hover {
         background-color: rgba(92, 9, 9, 0.88);
