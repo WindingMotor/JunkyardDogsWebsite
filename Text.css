@@ -265,6 +265,38 @@
     transition:1s; 
   }
 
+
+  .pagecolumn{
+    background-color: rgba(92, 9, 9, 0.92);
+    background-blend-mode: multiply;
+    background-image: url('dark-honeycomb.png'); 
+    border-radius: 60px;
+    min-height: 400px;
+    min-width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    transition:0.25s; 
+}
+
+.pagecolumn-left{
+  margin-left: -2vw;
+}
+.pagecolumn-right{
+  margin-left: 2vw;
+}
+
+.pagecolumn:hover {
+    background-color: rgba(92, 9, 9, 0.88);
+    border-radius: 65px;
+    box-shadow: 0 0 10px rgba(162, 0, 0,0.5);
+    transition: 0.5s; 
+}
+
+
+
+
+
   @media screen and (max-width: 700px) {
     z000{
         font-size:13vw;
@@ -314,8 +346,26 @@
         background-position: 0% 38%; 
         background-size: 150vw; 
       }
+
+      .pagecolumn-left{
+        margin-left: auto;
+      }
+      .pagecolumn-right{
+        margin-left: auto;
+      }
+      
   
 }
+
+
+
+
+
+
+
+
+
+
 
     .displayedchrg {
         display: block;
@@ -337,27 +387,6 @@
         font-family: impact;
         font-size: 4.2vw;
         
-    }
-
-    .pagecolumn{
-        background-color: rgba(92, 9, 9, 0.92);
-        background-blend-mode: multiply;
-        background-image: url('dark-honeycomb.png'); 
-        border-radius: 60px;
-        min-height: 400px;
-        min-width: 300px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding-bottom: 15px;
-        transition:0.25s; 
-
-    }
-
-    .pagecolumn:hover {
-        background-color: rgba(92, 9, 9, 0.88);
-        border-radius: 65px;
-        box-shadow: 0 0 10px rgba(162, 0, 0,0.5);
-        transition: 0.5s; 
     }
 
   @font-face {
