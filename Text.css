@@ -11,7 +11,14 @@
         rgba(0, 0, 0, 0.3)
       ), url("https://www.toptal.com/designers/subtlepatterns/uploads/tactile_noise.png");
       background-size: 80px;
+
+/*
+    background: url(/images/tile.gif);
+    background-size: 100px;
+    position: relative;
+*/
   }
+
 
   h1 {
     color: rgb(255, 255, 255);
@@ -265,7 +272,7 @@
     opacity: 100%;
     transition:1s; 
   }
-  
+
   .homebg-text:hover{
     opacity: 10%;
     transition:1s; 
