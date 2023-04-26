@@ -106,9 +106,9 @@
   p{
     font-family: BuloExtraBlackItalic; 
     color: white;
-    -webkit-text-stroke-width: 0.1vw;  
+    -webkit-text-stroke-width: 0.13vw;  
     -webkit-text-stroke-color: rgb(0, 0, 0);
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 20px;
@@ -125,11 +125,11 @@
   .videowrapper {
     display: block;
     overflow: hidden;
-    width: 30vw;
-    height: 18vw;
+    width: 35vw;
+    height: 20vw;
     border-radius: 25px;
     transform: translateZ(0px);
-    border: 3px solid;
+    border: 5px solid;
     border-color: rgba(162, 0, 0,0.5);
     margin: 0 auto;
     transition: 1s; 
@@ -192,17 +192,22 @@
     transform: translateZ(0px);
     margin: 0 auto;
     font-family: BuloExtraBlackItalic; 
+    /*
     background-image:  linear-gradient(
         rgba(0, 0, 0, 0.3), 
         rgba(0, 0, 0, 0.3)
       ), url("https://www.toptal.com/designers/subtlepatterns/uploads/tactile_noise.png");
+    
     background-size: 80;
-    border: 3px solid;
+    */
+    background-color: rgba(15,15,15,1);
+    border: 5px solid;
+    border-radius: 15px;
     border-color: rgba(162, 0, 0,0.5);
     -webkit-text-stroke-width: 0.1vw;
     -webkit-text-stroke-color: rgba(162, 0, 0,1);
     color: white;
-    font-size:1.8vw;
+    font-size:1.85vw;
     display: block; 
     margin-top: 30px;
     margin-bottom: 50px;
@@ -236,7 +241,7 @@
   z000{
     font-family: "BuloExtraBlackItalic"; 
     color: white;
-    -webkit-text-stroke-width: 0.22vw;  
+    -webkit-text-stroke-width: 0.28vw;  
     -webkit-text-stroke-color: rgb(0, 0, 0);
     font-size:5vw;
 
@@ -267,16 +272,41 @@
 
 
   .pagecolumn{
-    background-color: rgba(92, 9, 9, 0.92);
+    background-color: rgba(110, 1, 1, 0.92);
+    /*background-color: rgba(92, 9, 9, 0.92);*/
     background-blend-mode: multiply;
     background-image: url('dark-honeycomb.png'); 
     border-radius: 60px;
-    min-height: 400px;
+    min-height: 450px;
     min-width: 300px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding-bottom: 15px;
     transition:0.25s; 
+
+    border: solid;
+    border-width: 5px;
+    border-color: rgba(162, 0, 0, 0.3);
+}
+
+  .bgcolumm{
+
+    background-color: rgba(85, 1, 1, 0.92);
+    /*background-color: rgba(92, 9, 9, 0.92);*/
+    background-blend-mode: multiply;
+    background-image: url('dark-honeycomb.png'); 
+    border-radius: 60px;
+    min-height:800px;
+    min-width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    transition:0.25s; 
+    box-shadow: 0 0 10px rgba(162, 0, 0,0.5);
+
+    border: solid;
+    border-width: 5px;
+    border-color: rgba(162, 0, 0, 0.3);
 }
 
 .pagecolumn-left{
@@ -293,6 +323,30 @@
     transition: 0.5s; 
 }
 
+.imglighter{
+  background-color: rgba(100, 0, 0, 0.9);
+}
+
+
+.bgcolumm-blank{
+
+  background-color: rgba(85, 1, 1, 0);
+  /*background-color: rgba(92, 9, 9, 0.92);*/
+  background-blend-mode: multiply;
+  background-image: url('dark-honeycomb.png'); 
+  border-radius: 80px;
+  min-height:500px;
+  min-width: 600px;
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  transition:0.25s; 
+
+  border: solid;
+  border-width: 5px;
+  border-color: rgba(162, 0, 0, 0.3);
+}
 
 
 
@@ -331,6 +385,7 @@
         -webkit-text-stroke-width: 0.3vw;
         font-size:8vw;
       }
+
 
       a1{
           font-size: 5.2vw; 
@@ -375,11 +430,25 @@
      
     }
 
+    .displayedengz {
+      display: block;
+      margin-left:  auto;
+      margin-right: auto;
+      padding: 2px;
+   
+  }
+
     .displayedchrg:hover {
 
       -webkit-filter: drop-shadow(5px 5px 5px #222);
       filter: drop-shadow(5px 5px 5px rgba(241, 227, 29, 0.85));
   }
+
+  .displayedengz:hover {
+
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px rgba(128, 241, 29, 0.85));
+}
 
     .divtext {
         display: table;
