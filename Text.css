@@ -265,6 +265,7 @@
     opacity: 100%;
     transition:1s; 
   }
+  
   .homebg-text:hover{
     opacity: 10%;
     transition:1s; 
@@ -275,7 +276,6 @@
     background-color: rgba(110, 1, 1, 0.92);
     /*background-color: rgba(92, 9, 9, 0.92);*/
     background-blend-mode: multiply;
-    background-image: url('dark-honeycomb.png'); 
     border-radius: 60px;
     min-height: 450px;
     min-width: 300px;
@@ -294,7 +294,6 @@
     background-color: rgba(85, 1, 1, 0.92);
     /*background-color: rgba(92, 9, 9, 0.92);*/
     background-blend-mode: multiply;
-    background-image: url('dark-honeycomb.png'); 
     border-radius: 60px;
     min-height:800px;
     min-width: 600px;
@@ -333,11 +332,8 @@
   background-color: rgba(85, 1, 1, 0);
   /*background-color: rgba(92, 9, 9, 0.92);*/
   background-blend-mode: multiply;
-  background-image: url('dark-honeycomb.png'); 
   border-radius: 80px;
-  min-height:500px;
-  min-width: 600px;
-  padding: 30px;
+  padding: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
   padding-bottom: 15px;
