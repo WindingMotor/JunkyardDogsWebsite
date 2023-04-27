@@ -88,6 +88,10 @@
     transform: 0 0 ;
   }
 
+  .imgslide{
+    width: 100px;
+  }
+
 
 
 
@@ -115,7 +119,7 @@
     color: white;
     -webkit-text-stroke-width: 0.10vw;  
     -webkit-text-stroke-color: rgb(0, 0, 0);
-    font-size: 1.3vw;
+    font-size: 1.6vw;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 20px;
@@ -376,6 +380,7 @@
         height: 80vw;
       }
 
+
       .imagecenter{
         width: 80vw;
         height: 60vw;
@@ -471,7 +476,8 @@
     .halfimg {
       width: 45%;
       height: 100%;
-      background-image: url('/images/noahhappi.jpg');
+      background-color: rgba(110, 1, 1, 0.92);
+      
       background-size: cover;
       background-position: center;
     }
@@ -482,7 +488,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #f2f2f2;
+      background-color: rgba(110, 1, 1, 0.92);
+      padding: 15px;
     }
     
     @media (max-width: 768px) {
