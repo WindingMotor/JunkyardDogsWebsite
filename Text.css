@@ -470,7 +470,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 80vh;
+      height: 150vh;
+      min-height: 150vh;
     }
     
     .halfimg {
@@ -480,8 +481,9 @@
       
       background-size: cover;
       background-position: center;
-      border-top-left-radius: 30px;
-      border-bottom-left-radius: 30px;
+      border-top-left-radius: 80px;
+      
+      border-bottom-left-radius: 80px;
     }
 
     .halftxt {
@@ -494,11 +496,46 @@
       background-color: rgba(110, 1, 1, 0.92);
       overflow: auto;
       word-wrap: break-word;
-      border-top-right-radius: 30px;
-      border-bottom-right-radius: 30px;
+      border-top-right-radius: 80px;
+      border-bottom-right-radius: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       
       
     }
+
+    .bg-pagecolumn-right{
+      background-color: rgba(110, 1, 1, 0.92);
+      border: solid;
+      border-width: 5px;
+      border-color: rgb(122, 0, 0);
+      border-top-right-radius: 80px;
+      border-bottom-right-radius: 80px;
+      margin-right: 35px;
+
+
+    }
+
+    .bg-pagecolumn-left{
+      background-color: rgba(110, 1, 1, 0.92);
+      border: solid;
+      border-width: 5px;
+      border-color: rgb(122, 0, 0);
+      border-top-left-radius: 80px;
+      border-bottom-left-radius: 80px;
+      min-height: 80vh;
+      background-size: cover;
+      background-position: center;
+      margin-left: 35px;
+
+    }
+
+    .carousel-item {
+      transition-duration: 0.5s;
+    }
+
+
     
     @media (max-width: 768px) {
       .pagecolumn-full {
@@ -526,12 +563,55 @@
       .halfimg {
         order: 2;
       }
+
+
+    .bg-pagecolumn-right{
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      margin-right: 0px;
+
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+
+    }
+
+    .bg-pagecolumn-left{
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      margin-left: 0px;
+
+      border-top-left-radius: 60px;
+      border-top-right-radius: 60px;
+
     }
 
 
 
 
 
+
+
+
+    }
+
+
+
+    .row.no-gutters [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+
+    .text-section {
+      padding: 20px;
+    }
+    
+    @media (max-width: 767px) {
+      .text-section {
+        padding: 10px;
+      }
+    }
+    
 
 
 
