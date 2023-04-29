@@ -443,8 +443,7 @@
       margin-left:  auto;
       margin-right: auto;
       padding: 2px;
-   
-  }
+    }
 
     .displayedchrg:hover {
 
@@ -506,13 +505,17 @@
     }
 
     .bg-pagecolumn-right{
-      background-color: rgba(110, 1, 1, 0.92);
+      box-shadow: 0 0 100px rgba(162, 0, 0,0.8) inset;
+      background-color: rgba(8, 0, 0, 0.8);
+      background-blend-mode: soft-light;
       border: solid;
       border-width: 5px;
       border-color: rgb(122, 0, 0);
       border-top-right-radius: 80px;
       border-bottom-right-radius: 80px;
       margin-right: 35px;
+
+
 
 
     }
