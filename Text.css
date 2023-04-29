@@ -10,7 +10,7 @@
         rgba(0, 0, 0, 0.3), 
         rgba(0, 0, 0, 0.3)
       ), url("https://www.toptal.com/designers/subtlepatterns/uploads/tactile_noise.png");
-      background-size: 80px;
+      background-size: 100px;
 
 /*
     background: url(/images/tile.gif);
@@ -159,6 +159,13 @@
     border-color: rgba(162, 0, 0,0.5);
     margin: 0 auto;
     transition: 1s; 
+  
+  }
+
+  .videowrapper-large:hover {
+    border-color: rgba(162, 0, 0,0.8);
+    box-shadow: 0 0 10px rgba(162, 0, 0,0.5);
+    transition: 0.25s; 
   
   }
 
@@ -398,6 +405,12 @@
       }
 
       .videowrapper{
+        width: 80vw;
+        height: 80vw;
+      }
+    
+      .videowrapper-large{
+        margin-top: 100px;
         width: 80vw;
         height: 80vw;
       }
