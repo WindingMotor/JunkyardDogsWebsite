@@ -590,6 +590,15 @@
       margin: 0px; margin-top: 0px;
    }
     
+   .sponsor-img{
+    background: url('/images//LuckStoneLogo.png')
+    no-repeat;
+    background-size:cover;
+    display: inline-flex;
+    margin: 20px;
+    
+
+   }
     @media (max-width: 768px) {
       .pagecolumn-full {
         flex-direction: column;
