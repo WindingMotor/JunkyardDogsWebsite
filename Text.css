@@ -4,14 +4,12 @@
  
   body {
 
-
-    background:  rgb(25, 25, 25);
     background-image:  linear-gradient(
-        rgba(0, 0, 0, 0.3), 
-        rgba(0, 0, 0, 0.3)
-      ), url("https://www.toptal.com/designers/subtlepatterns/uploads/tactile_noise.png");
-      background-size: 100px;
-
+        rgba(0, 0, 0, 0.8), 
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.8)
+      ), url("/images/y-so-serious.png");
+      background-size: 500px;
 /*
     background: url(/images/tile.gif);
     background-size: 100px;
