@@ -173,14 +173,13 @@
 
   }
 
-
   .videowrapper:hover {
     border-color: rgba(162, 0, 0,0.8);
     box-shadow: 0 0 10px rgba(162, 0, 0,0.5);
     transition: 0.25s; 
   }
 
-
+  
   .imagecenter{
     display: block;
     overflow: hidden;
@@ -449,6 +448,10 @@
       .pagecolumn-right{
         margin-left: auto;
       }
+
+      .videowrapper-large{
+        margin-bottom: -100px;
+      }
       
   
 }
@@ -594,10 +597,11 @@
     background-size:cover;
     display: inline-flex;
     margin: 20px;
-    
-
    }
+
     @media (max-width: 768px) {
+
+
       .pagecolumn-full {
         flex-direction: column;
       }
@@ -644,6 +648,7 @@
 
       border-top-left-radius: 60px;
       border-top-right-radius: 60px;
+      height: 300px;
 
     }
 
