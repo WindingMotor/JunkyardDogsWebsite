@@ -18,7 +18,7 @@
     </div>
     <p>This page is a work in development - for use on Desktop or Tablet only!</p>
     <div class="header-buttons">
-      <button class="btn btn-secondary">Other Button</button>
+      <button onclick="window.location.href='/index.html';" class="btn btn-secondary">Homepage</button>
     </div>
   </header>
 
@@ -46,15 +46,21 @@
         </li>
 
         <li><a href="#">Section 3</a></li>
-        <li><a href="section4">Section 4</a></li>
+        <li><a href="#section4">Section 4</a></li>
       </ul>
     </div>
   </div>
   
   <div id="sidebar-content-container">
   <div id="content">
+    <h1 id="intro">Programming Documentation</h1>
+    <p>Welcome to our team's brand new java documentation. We will be using this webpage to learn and 
+      create robot projects over the offseason. This webpage will host a variety of information like motors, PIDs, vision, and even more!
+    </p>
+
     <h1 id="section1">Section 1</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <img style="width: 100px; height: auto;" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/800px-Java_programming_language_logo.svg.png">
 
     <h1 id="section2">Section 2</h1>
     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
@@ -65,7 +71,7 @@
     <h1 id="section4">Section 4</h1>
     <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-    <pre class="code-pre"><code class="code-snippet language-javascript">
+    <pre class="code-pre" onclick="copyToClipboard(this)"><code class="code-snippet language-javascript">
       <p1>
     public void setDesiredState(SwerveModuleState state){
 
@@ -86,6 +92,11 @@
 
   </div>
 </div>
+
+<div class="copy-feedback" id="copyFeedback">
+  Copied
+</div>
+
 
       <!-- Load highlight.js from a CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
@@ -116,6 +127,27 @@
       document.getElementById("content").classList.toggle("shifted");
     }
 
+  </script>
+    <script>
+      function copyToClipboard(element) {
+          const textarea = document.createElement('textarea');
+          textarea.value = element.textContent;
+          document.body.appendChild(textarea);
+          textarea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textarea);
+
+          const copyFeedback = document.getElementById('copyFeedback');
+          copyFeedback.classList.add('show');
+
+          setTimeout(function() {
+              copyFeedback.classList.add('hide');
+          }, 2000);
+
+          setTimeout(function() {
+              copyFeedback.classList.remove('show', 'hide');
+          }, 2300);
+      }
   </script>
 
 </body>
