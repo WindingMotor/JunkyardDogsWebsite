@@ -92,15 +92,27 @@
   h1{
     color: white;
     font-family: 'Ubuntu', sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
   }
 
   a{
+    font-family: 'Ubuntu', sans-serif;
+    color: #a18c6b;
+    text-decoration: none;
+    font-size: 110%;
+  }
+
+  .a-sidebar{
     font-family: 'Ubuntu', sans-serif;
     color: white;
     text-decoration: none;
     font-size: 110%;
   }
+
+  a:hover{
+    color: #7f7f6e;
+  }
+
 
   b{
     margin-top: 8px;
@@ -140,12 +152,12 @@
   }
 
   .closebtn{
-    color: #555549;
+    color: #ffffff;
     transition: 0.1s;
     font-size: 250%}
 
   .closebtn:hover{
-    color: #ffffff;
+    color: #7f7f6e;
     font-size: 255%;
     transition: 0.1s;
   }
@@ -192,14 +204,17 @@
 
   .header-buttons {
     display: flex;
-    gap: 8px;
+    gap: 12px;
     margin-right: 50px;
   }
 
   .p-spacer-md{
     display: block;
-    height: 0px;
-    width: auto;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    height: 2px;
+    background-color: #35352e;
+    width: 100vh;
   }
 
   .p-spacer-s{
