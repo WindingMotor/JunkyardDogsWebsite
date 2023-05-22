@@ -89,11 +89,27 @@
     max-width: 800px;
   }
 
+  p.indent{
+    text-indent: 30px;
+  }
+
   h1{
     color: white;
+    font-size: calc(1.375rem + 1.5vw);
     font-family: 'Ubuntu', sans-serif;
-    margin-bottom: 28px;
+    margin-bottom: 25px;
   }
+
+  h3{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 15px;
+  }
+
+  h3.indent{
+    text-indent: 30px;
+  }
+
 
   a{
     font-family: 'Ubuntu', sans-serif;
@@ -154,11 +170,11 @@
   .closebtn{
     color: #ffffff;
     transition: 0.1s;
-    font-size: 250%}
+    font-size: 100%}
 
   .closebtn:hover{
     color: #7f7f6e;
-    font-size: 255%;
+    font-size: 95%;
     transition: 0.1s;
   }
 
@@ -219,8 +235,11 @@
 
   .p-spacer-s{
     display: block;
-    height: 10px;
-    width: auto;
+    height: 1px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #35352e;
+    width: 45vh;
   }
 
   .copy-feedback {

@@ -36,11 +36,11 @@
       <ul>
 
         <li>
-          <a href="#section0" class="a-sidebar" >Resources</a>
+          <a href="#section0" class="a-sidebar" >📔 Resources</a>
         </li>
 
         <li>
-          <a href="#" class="a-sidebar" onclick="toggleSection(event, 'section1')">Syntax</a>
+          <a href="#" class="a-sidebar" onclick="toggleSection(event, 'section1')">📜 Syntax</a>
           <ul id="section1" class="subsection">
             <li><a class="a-sidebar" href="#">1.1</a></li>
             <li><a class="a-sidebar" href="#">1.2</a></li>
@@ -49,7 +49,7 @@
         </li>
         
         <li>
-          <a href="#" class="a-sidebar" onclick="toggleSection(event, 'section2')">Setup</a>
+          <a href="#" class="a-sidebar" onclick="toggleSection(event, 'section2')">🎪 Setup</a>
           <ul id="section2" class="subsection">
             <li><a class="a-sidebar" href="#">2.1</a></li>
             <li><a class="a-sidebar" href="#">2.2</a></li>
@@ -58,7 +58,7 @@
         </li>
 
         <li>
-          <a href="#" class="a-sidebar" >Project Layout</a>
+          <a href="#" class="a-sidebar" >🗄️ Project Layout</a>
         </li>
 
         <li>
@@ -84,13 +84,52 @@
 
 
     <div class="p-spacer-md"></div>
-    <h1 id="section1">Resources</h1>
+    <h1 id="section0">Resources</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <img style="width: 100px; height: auto;" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/800px-Java_programming_language_logo.svg.png">
 
     <div class="p-spacer-md"></div>
     <h1 id="section2">Syntax</h1>
-    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+
+    <h3 class="indent">What is Syntax?</h3>
+    <p class="indent" style="display: inline-flex;">Syntax is the term that refers to the set of rules and structure 
+    that govern the correct arrangement and format of code statements and expressions. Each programming
+    language has its own diffrent syntax and java's is pretty simple compared to others ones.</p>
+    <img style="width: 50px; height: auto; margin-left: 25px; display: inline-flex;" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/800px-Java_programming_language_logo.svg.png">
+
+    <div class="p-spacer-s"></div>
+    <h3 class="indent">Classes</h3>
+    <p class="indent">In Java, a class serves as a container for storing code and is represented by a file. 
+      Each class, including other Java elements, adheres to a specific syntax, which is defined at 
+      the beginning of the file before any other code.
+    </p>
+    <pre class="code-pre" onclick="copyToClipboard(this)"><code class="code-snippet language-javascript">
+    <p>
+    // Filename: Example.java
+    public class Example{
+      // Code inside class goes here    
+    }
+    </p>
+      </code></pre>
+      <p>This code snippet creates a new class of the file name Example</p>
+
+    <div class="p-spacer-s"></div>
+    <h3 class="indent">Variables</h3>
+    <p class="indent">Syntax is the term that refers to the set of rules and structure 
+    that govern the correct arrangement and format of code statements and expressions. Each programming
+    language has its own diffrent syntax and java's is pretty simple compared to others ones.</p>
+
+    <div class="p-spacer-s"></div>
+    <h3 class="indent">Methods</h3>
+    <p class="indent">Syntax is the term that refers to the set of rules and structure 
+    that govern the correct arrangement and format of code statements and expressions. Each programming
+    language has its own diffrent syntax and java's is pretty simple compared to others ones.</p>
+
+    <div class="p-spacer-s"></div>
+    <h3 class="indent">Constructors</h3>
+    <p class="indent">Syntax is the term that refers to the set of rules and structure 
+    that govern the correct arrangement and format of code statements and expressions. Each programming
+    language has its own diffrent syntax and java's is pretty simple compared to others ones.</p>
+
 
     <div class="p-spacer-md"></div>
     <h1 id="section3">Setup</h1>
@@ -143,59 +182,63 @@
       document.getElementById("mySidebar").style.width = "250px";
       document.getElementById("content").classList.add("open");
     }
-
+  
     function closeNav() {
       document.getElementById("mySidebar").style.width = "0";
       document.getElementById("content").classList.remove("open");
     }
-
+  
     function toggleSection(event, sectionId) {
       event.preventDefault();
       const section = document.getElementById(sectionId);
       section.classList.toggle("expanded");
       document.getElementById("content").classList.toggle("shifted");
     }
-
+  
+    // Call openNav() to open the sidebar by default
+    window.addEventListener("load", openNav);
   </script>
-<script>
-  let clickCount = 0;
-  let resetTimer;
+  
 
-  function resetClickCount() {
-      clickCount = 0;
-  }
+  <script>
+    let clickCount = 0;
+    let resetTimer;
 
-  function copyToClipboard(element) {
-    
-      clickCount++;
+    function resetClickCount() {
+        clickCount = 0;
+    }
 
-      clearTimeout(resetTimer);
-      resetTimer = setTimeout(resetClickCount, 300); // Adjust the duration as needed
+    function copyToClipboard(element) {
+      
+        clickCount++;
 
-      if (clickCount === 3) {
-          const textarea = document.createElement('textarea');
-          textarea.value = element.textContent;
-          document.body.appendChild(textarea);
-          textarea.select();
-          document.execCommand('copy');
-          document.body.removeChild(textarea);
+        clearTimeout(resetTimer);
+        resetTimer = setTimeout(resetClickCount, 300); // Adjust the duration as needed
 
-          const copyFeedback = document.getElementById('copyFeedback');
-          copyFeedback.classList.add('show');
+        if (clickCount === 3) {
+            const textarea = document.createElement('textarea');
+            textarea.value = element.textContent;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
 
-          setTimeout(function() {
-              copyFeedback.classList.add('hide');
-          }, 2000);
+            const copyFeedback = document.getElementById('copyFeedback');
+            copyFeedback.classList.add('show');
 
-          setTimeout(function() {
-              copyFeedback.classList.remove('show', 'hide');
-          }, 2300);
+            setTimeout(function() {
+                copyFeedback.classList.add('hide');
+            }, 2000);
 
-          // Reset the click count
-          clickCount = 0;
-      }
-  }
-</script>
+            setTimeout(function() {
+                copyFeedback.classList.remove('show', 'hide');
+            }, 2300);
+
+            // Reset the click count
+            clickCount = 0;
+        }
+    }
+  </script>
 
 
 </body>
