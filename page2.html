@@ -85,7 +85,7 @@
     <div id="section0"></div>
     <div class="p-spacer-md"></div>
     <h1>Resources</h1>
-    <p>Various resources for programming such as documentation and libraries.</p>
+    <p>Various links of documentation and libraries.</p>
     <a href="https://docs.wpilib.org/en/stable/index.html">Wpilib Offical</a>
     <div class="p-spacer-xs"></div>
     <a href="https://first.wpi.edu/wpilib/allwpilib/docs/release/java/index.html">Wpilib API</a>
@@ -108,8 +108,8 @@
     <div class="p-spacer-s"></div>
     <h3 class="indent">Classes</h3>
     <p class="indent">In Java, a class serves as a container for storing code and is represented by a file
-      with the ending ".java". Each class, including other Java elements, adheres to a specific syntax, which is defined at 
-      the beginning of the file before any other code.
+      with the ending ".java". Each class, including other Java elements, adheres to a specific syntax, a
+      class has a header at the top of the file before any other code.
     </p>
     <pre class="code-pre" onclick="copyToClipboard(this)"><code class="code-snippet language-javascript">
     <p>
@@ -129,6 +129,7 @@
     </p>
     <pre class="code-pre" onclick="copyToClipboard(this)"><code class="code-snippet language-javascript">
       <p>
+        
       // Decimal numbers
       double number = 1.5;
 
@@ -153,13 +154,13 @@
       // Access the number only inside the class
       private int number = 1;      
 
-      // Access the number anywhere in the project
+      // Access the number with a class object
       public int number = 1;     
           
-      // Variable value cannot be changed once assigned   
+      // Value cannot be changed once assigned   
       final int number = 1;      
 
-      // Variable can be accessed without an object   
+      // Can be accessed without a class object   
       static int number = 1; 
         </p>
         </code></pre>
@@ -243,26 +244,6 @@
         </p>
         </code></pre>
 
-    <div class="table-div">
-    <table>
-      <tr>
-        <th><p class="p-table">Company</p></th>
-        <th><p class="p-table">Contact</p></th>
-        <th><p class="p-table">Country</p></th>
-      </tr>
-      <tr>
-        <td><p class="p-table">Alfred</p></td>
-        <td><p class="p-table">Maria</p></td>
-        <td><p class="p-table">Germany</p></td>
-      </tr>
-      <tr>
-        <td><p class="p-table">Centro</p></td>
-        <td><p class="p-table">Francisco</p></td>
-        <td><p class="p-table">Mexico</p></td>
-      </tr>
-    </table>
-  </div>
-
     <div class="p-spacer-s"></div>
     <h3 class="indent">Constructors</h3>
     <p class="indent">Syntax is the term that refers to the set of rules and structure 
@@ -276,7 +257,44 @@
 
     <div class="p-spacer-md"></div>
     <h1 id="section4">Project Layout</h1>
-    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <p class="indent">These are some common file types used in a wpilib project</p>
+    <div class="table-div">
+      <table>
+        <tr>
+          <th><p class="p-table">Type</p></th>
+          <th><p class="p-table">Usage</p></th>
+          <th><p class="p-table">Example: Intake</p></th>
+        </tr>
+        <tr>
+          <td><p class="p-table">RobotContainer</p></td>
+          <td><p class="p-table">Creates and holds subsystem objects</p></td>
+          <td><p class="p-table">IntakeSubsystem intake = new IntakeSubsystem();</p></td>
+        </tr>
+        <tr>
+          <td><p class="p-table">Subsystem</p></td>
+          <td><p class="p-table">Contains methods and variables for commands</p></td>
+          <td><p class="p-table">public class IntakeSubsystem{/*code*/}</p></td>
+        </tr>
+        <tr>
+          <td><p class="p-table">Commands</p></td>
+          <td><p class="p-table">Runs methods from subsystems</p></td>
+          <td><p class="p-table">Command RunInake();</p></td>
+        </tr>
+        <tr>
+          <td><p class="p-table">Constants</p></td>
+          <td><p class="p-table">Contains values that will never change</p></td>
+          <td><p class="p-table">final double maxRpm = 120.5;</p></td>
+        </tr>
+        <tr>
+          <td><p class="p-table">Util</p></td>
+          <td><p class="p-table">Contains mostly static methods</p></td>
+          <td><p class="p-table">public static class Caculator{/*static code*/}</p></td>
+        </tr>
+      </table>
+    </div>
+    <div class="p-spacer-s"></div>
+
 
     <pre class="code-pre" onclick="copyToClipboard(this)"><code class="code-snippet language-javascript">
       <p>
