@@ -119,13 +119,13 @@
     }
     </p>
       </code></pre>
-      <p>This code snippet creates a new class with the file name "Example".</p>
+      <p>This code snippet is a class with the file name "Example".</p>
     <img style="width: 200px; height: auto; margin: 0px; display: inline-flex; opacity: 35%;" src="/images//mrbeast.png">
 
     <div class="p-spacer-s" style="margin-top: 0px;"></div>
     <h3 class="indent">Variables</h3>
-    <p class="indent">Variables are used to store data like numbers, text, true/false values and objects.
-    They can be modified and changed. In java, variables must have a decleared permanent type.
+    <p class="indent">Variables are used to store data like numbers, text, boolean values and objects.
+    They can be modified and changed. Variables must have a decleared permanent type.
     </p>
     <pre class="code-pre" onclick="copyToClipboard(this)"><code class="code-snippet language-javascript">
       <p>
@@ -134,17 +134,134 @@
 
       // Non-Decimal numbers
       int number = 1;
-      public class Example{
-        // Code inside class goes here    
-      }
+
+      // Text 
+      String text = "hello world";
+
+      // True/False values
+      Boolean isTrue = false;
+
+      // Creating an object
+      MyObject myObject = new MyObject();   
+
+      </p>
+      </code></pre>
+      <div class="p-spacer-xs"></div>
+      <p>Variables can have keywords that change their access permissions</p>
+      <pre class="code-pre" onclick="copyToClipboard(this)"><code class="code-snippet language-javascript">
+        <p>
+      // Access the number only inside the class
+      private int number = 1;      
+
+      // Access the number anywhere in the project
+      public int number = 1;     
+          
+      // Variable value cannot be changed once assigned   
+      final int number = 1;      
+
+      // Variable can be accessed without an object   
+      static int number = 1; 
+        </p>
+        </code></pre>
+    <div class="p-spacer-s"></div>
+    <h3 class="indent">Methods</h3>
+    <p class="indent">Methods are pieces of code that run when called. 
+      They have keywords just like variables.
+    </p>
+    <pre class="code-pre" onclick="copyToClipboard(this)"><code class="code-snippet language-javascript">
+      <p>
+    // Filename: Voice
+    /* Create the 2 methods named "sayHello" and "sayGoodbye"   
+    that both print out a message to the console when called */
+
+    /* This method has the keyword public so
+    it can be used outside of the class */
+    public void sayHello(){
+      System.out.println("Hello")
+    }
+
+    /* This other method has the keyword private
+    so it can only be used inside this class */
+    private void sayGoodbye(){
+      System.out.println("Goodbye")
+    }
+
+    /* --- Other class --- */
+    // Filename: Main
+
+    // Create a new voice object
+    Voice voice = new Voice();
+
+    // Call "sayHello"
+    voice.sayHello(); // -> This will work
+
+    // Call "sayGoodbye"
+    voice.sayGoodbye(); // -> This will crash!
+
       </p>
       </code></pre>
 
-    <div class="p-spacer-s"></div>
-    <h3 class="indent">Methods</h3>
-    <p class="indent">Syntax is the term that refers to the set of rules and structure 
-    that govern the correct arrangement and format of code statements and expressions. Each programming
-    language has its own diffrent syntax and java's is pretty simple compared to others ones.</p>
+      <p class="indent"> Methods can have parameters, these let you input a variable. These parameters
+    must have a declared type and name in the method header.
+      </p>
+
+      <pre class="code-pre" onclick="copyToClipboard(this)"><code class="code-snippet language-javascript">
+        <p>
+    // Filename: Voice
+
+    /* Create a method named "sayText" that prints out  
+    the inputed variable named "txt" with the type of 
+    String */
+    public void sayText(String txt){
+      System.out.println(text);
+    }
+
+    /* Create a method named "sayNumber" that prints out  
+    the inputed variable named "num" with the type of 
+    Double */
+    public void sayNumber(Double num){
+      System.out.print(num);
+    }
+
+    /* --- Other class --- */
+    // Filename: Main
+
+    // Create a new voice object
+    Voice voice = new Voice();
+
+    // Create a double with the value 2.15
+    double value = 2.15;
+
+    voice.sayText("This is amazing!");
+    voice.sayNumber(value);
+    /* The code above prints this to the console:
+    This is amazing! 2.15 */
+
+
+
+
+        </p>
+        </code></pre>
+
+    <div class="table-div">
+    <table>
+      <tr>
+        <th><p class="p-table">Company</p></th>
+        <th><p class="p-table">Contact</p></th>
+        <th><p class="p-table">Country</p></th>
+      </tr>
+      <tr>
+        <td><p class="p-table">Alfred</p></td>
+        <td><p class="p-table">Maria</p></td>
+        <td><p class="p-table">Germany</p></td>
+      </tr>
+      <tr>
+        <td><p class="p-table">Centro</p></td>
+        <td><p class="p-table">Francisco</p></td>
+        <td><p class="p-table">Mexico</p></td>
+      </tr>
+    </table>
+  </div>
 
     <div class="p-spacer-s"></div>
     <h3 class="indent">Constructors</h3>
