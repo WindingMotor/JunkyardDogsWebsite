@@ -162,6 +162,8 @@
     transition: 0.3s;
   }
 
+  
+
   .code-snippet:hover{
     border-color: #7f7f6e;
     transition: 0.3s;
@@ -201,6 +203,18 @@
 
   .code-pre:hover{
     box-shadow: 0 0 10px #555549;
+  }
+
+  .image-hover{
+    height: fit-content;
+    width: 500px;
+    border-radius: 48px;
+    transition: 0.3s;
+  }
+
+  .image-hover:hover{
+    box-shadow: 0 0 10px #555549;
+    transition: 0.3s;
   }
 
   /* Main header styles */

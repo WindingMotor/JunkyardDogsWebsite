@@ -6,12 +6,12 @@
 
   <meta property="og:title" content="2106 Programming Documentation">
   <meta property="og:description" content="Documentation for 2106's java wpilib programming">
-  <meta property="og:image" content="images/progico.png">
+  <meta property="og:image" content="images/logo.png">
   <meta property="og:url" content="https://www.team2106.org/page2.html">
 
 
   <title>2106 Programming Documentation</title>
-  <link rel="icon" href="images/progico.ico">
+  <link rel="icon" href="images/logo.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="Code.css">
@@ -127,6 +127,10 @@
     <p class="indent">Variables are used to store data like numbers, text, boolean values and objects.
     They can be modified and changed. Variables must have a decleared permanent type.
     </p>
+    <div  class="image-hover">
+      <img style="width: 500px; height: auto; margin: 25px; margin-left:0px; display: flex;" src="/images/vari1.png">
+    </div>
+
     <pre class="code-pre" onclick="copyToClipboard(this)"><code class="code-snippet language-javascript">
       <p>
         
@@ -169,6 +173,10 @@
     <p class="indent">Methods are pieces of code that run when called. 
       They have keywords just like variables.
     </p>
+    <div  class="image-hover">
+      <img style="width: 500px; height: auto; margin: 25px; margin-left:0px; display: flex;" src="/images/method.png">
+    </div>
+
     <pre class="code-pre" onclick="copyToClipboard(this)"><code class="code-snippet language-javascript">
       <p>
     // Filename: Voice
@@ -238,18 +246,48 @@
     /* The code above prints this to the console:
     This is amazing! 2.15 */
 
-
-
-
         </p>
         </code></pre>
 
     <div class="p-spacer-s"></div>
     <h3 class="indent">Constructors</h3>
-    <p class="indent">Syntax is the term that refers to the set of rules and structure 
-    that govern the correct arrangement and format of code statements and expressions. Each programming
-    language has its own diffrent syntax and java's is pretty simple compared to others ones.</p>
 
+    <p class="indent">Constructors are methods that tell a class how to be created. 
+      They are called when a class is instantiated and let you set default values.
+    </p>
+
+    <div  class="image-hover">
+      <img style="width: 500px; height: auto; margin: 25px; margin-left:0px; display: flex;" src="/images/homes.png">
+    </div>
+    <p>The image above uses the class below named House. Which contains two
+      seperate constructors, a default one and modified one with two parameters.
+    </p>
+    <pre class="code-pre" onclick="copyToClipboard(this)"><code class="code-snippet language-javascript">
+      <p>
+  // Filename: House
+  public class House{
+
+    private int windows;
+    private String color;
+
+    // Default Constructor
+    public House(){
+      windows = 0;
+      color = "gray";
+    }
+
+    // Modified Constructor
+    public House(int numWindows, String roofColor){   
+      windows = numWindows;
+      color = roofColor;
+    }
+
+  }
+      </p>
+      </code></pre>
+    <p>An exmaple of contructors being used is the SwerveModules. Each one
+      gets diffrent parameters like location on the robot, motors IDs, and Encoder IDs.
+    </p>
 
     <div class="p-spacer-md"></div>
     <h1 id="section3">Setup</h1>
