@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-p {
-  font-family: 'Montserrat', sans-serif;
+@font-face {
+  font-family: 'Bulo Medium';
+  src: url('Bulo Medium.otf') format('opentype'); /* Adjust the path and format */
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -10,19 +13,19 @@ body {
 
 p{
   font-size: 2rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Bulo Medium', sans-serif;
   color: white;
 }
 
 h1{
   font-size: 3rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Bulo Medium', sans-serif;
   color: white;
 }
 
 h2{
   font-size: 5vw;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Bulo Medium', sans-serif;
   color: white;
   text-decoration:underline #6e0000;
   transition: 2s;
@@ -34,7 +37,7 @@ h2::before{
 
 a{
   padding: 5px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Bulo Medium', sans-serif;
   text-decoration: none;
   color: white;
   font-weight: bold;
@@ -147,7 +150,10 @@ a:hover{
 }
 
 .header {
+  z-index: 100;
   background-color: #6e0000;  /* #252526; */
+  background-image: url(/textures/AngledStripes.png); 
+  background-size: 150rem; background-position: center -100rem;  background-blend-mode: multiply; background-color: rgba(0, 0, 0,0.1);
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -203,12 +209,15 @@ a:hover{
   width: auto;
   margin-top: 50px;
   margin-bottom: 50px;
-  background-color: #5f0000;
+  background-color: #ffffff;
   border-radius: 4px;
+  transition: 0.5s;
 }
 
 .col-effect:hover .button-spacer {
-  background-color: #6e0000;
+  background-color: rgba(255, 255, 255, 0.25);
+  transition: 0.5s;
+  
 }
 
 /* Change column margin */
@@ -287,4 +296,30 @@ a:hover{
 }
 #header {
   transition: top 0.3s ease-in-out;
+}
+
+@keyframes scrollRight {
+  from {
+    background-position: 100% 0; /* Starting position */
+  }
+  to {
+    background-position: 0 0; /* Ending position */
+  }
+}
+
+@keyframes scrollUp {
+  from {
+    background-position: 0 100%; /* Starting position */
+  }
+  to {
+    background-position: 0 0; /* Ending position */
+  }
+}
+
+.scroll-right{
+  animation: scrollRight 200s linear infinite; /* Adjust duration as needed */
+}
+
+.scroll-up{
+  animation: scrollUp 120s linear infinite; /* Adjust duration as needed */
 }
