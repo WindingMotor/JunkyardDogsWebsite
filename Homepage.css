@@ -168,6 +168,12 @@ a:hover{
   margin: 0 10px;
 }
 
+.poster{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
 
 .button{
   display: block;
@@ -181,7 +187,7 @@ a:hover{
   border: 5px solid;
   border-radius: 16px;
 
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Bulo Medium', sans-serif;
   text-decoration: none;
   color: white;
   font-size:2.1rem;
