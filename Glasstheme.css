@@ -1,0 +1,41 @@
+
+.heading{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.feature-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.feature-description {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.container-cust {
+    background-color: #6e0000b4;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.image-gallery img {
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.video-description {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+model-viewer {
+width: 60%; /* Take up all available horizontal space */
+height: 60vh; /* Take up all available vertical space */
+margin: auto; /* Center the element horizontally and vertically */
+display: block; /* Ensure it's a block-level element */
+}
