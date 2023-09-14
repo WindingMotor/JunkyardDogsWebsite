@@ -1,4 +1,16 @@
 
+body {
+    background-color: #161616;
+  }
+
+
+@font-face {
+    font-family: 'Bulo Medium';
+    src: url('Bulo Medium.otf') format('opentype'); /* Adjust the path and format */
+    font-weight: normal;
+    font-style: normal;
+  }
+
 .heading{
     font-size: 2rem;
     font-weight: bold;
@@ -17,8 +29,8 @@
 }
 
 .container-cust {
-    background-color: #6e0000b4;
-    border-radius: 20px;
+    background-color: #6e0000be;
+    border-radius: 35px;
     padding: 20px;
     margin-top: 30px;
 }
@@ -39,3 +51,104 @@ height: 60vh; /* Take up all available vertical space */
 margin: auto; /* Center the element horizontally and vertically */
 display: block; /* Ensure it's a block-level element */
 }
+
+
+.button-glass {
+    display: inline-block; /* Change to inline-block to allow scaling */
+    padding: 10px 20px; /* Add padding for better scaling */
+    margin: 0 auto;
+    transition: 0.25s;
+  
+    background-color: #550000;
+    border: 2px solid rgba(255, 255, 255, 1); /* Adjust border thickness */
+    border-radius: 16px;
+  
+    font-family: 'Bulo Medium', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem; /* Adjust font size */
+    font-weight: bold;
+  
+    max-width: 15rem;
+    min-width: 10rem;
+    
+    /* Use flex for better centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.button-glass:hover {
+    background-color: rgba(95, 3, 3, 0.685);
+    border-color: rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    color: white;
+    transform: scale(1.1); /* Add a slight scale effect on hover */
+    transition: 0.5s;
+}
+
+/* Default styles for h2 */
+h2.text-center.stroked-text {
+    font-weight: bolder;
+    color: white;
+}
+
+/* Media query for desktop devices with a minimum width of 768px */
+@media (min-width: 768px) {
+    h2.text-center.stroked-text {
+        font-size: 4rem; /* Adjust the desired font size for desktop */
+    }
+}
+
+
+/* Default font size for p elements */
+p {
+    font-size: 1.3rem;
+}
+
+/* Media query for adjusting font size on smaller screens */
+@media (max-width: 768px) {
+    p {
+        font-size: 1.15rem; /* Adjust the desired font size for smaller screens */
+    }
+}
+
+
+.image-glass{
+    max-width: 100%;
+     max-height: 100vh;
+      margin: auto;
+       display: block;
+        border: 5px solid #ffffff1a;
+         border-radius: 20px;
+}
+
+.image-center-glass {
+    width: 20rem; /* Set your desired fixed width here */
+    height: 14rem; /* Set your desired fixed height here */
+    margin: auto;
+    display: block;
+    border: 5px solid #ffffff1a;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+.image-glass-sponsor{
+    width: 10rem; /* Set your desired fixed width here */
+    height: 10rem; /* Set your desired fixed height here */
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+    object-fit:contain;
+}
+
+
+/* Media query for adjusting font size on smaller screens */
+@media (max-width: 768px) {
+    .image-glass-sponsor{
+        width: 5rem; /* Set your desired fixed width here */
+        height: 5rem; /* Set your desired fixed height here */
+    }
+}
+

@@ -4,31 +4,27 @@
 <meta name="google-site-verification" content="7pJxnc9Hzh7vvKNs_egobAzrYA8I9fR1FLPFJifee_E" />
 
 <head>
-  <title>The Junkyard Dogs - Home</title>
-  <link rel="icon" href="images/favicon.png">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="Homepage.css">
+    <title>The Junkyard Dogs - Home</title>
+    <link rel="icon" href="images/favicon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="Homepage.css">
+    <link rel="stylesheet" href="Glasstheme.css">
 
+      <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJGCQ9B0KY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KJGCQ9B0KY');
+  </script>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KJGCQ9B0KY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-KJGCQ9B0KY');
-</script>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<body style="min-height: 2000px;">
-
-  <div style="width: auto; height: 100px; opacity: 100%;"></div>
+<body>
 
   <header class="header fixed-top"  id="header">
     <div class="logo">
@@ -37,144 +33,157 @@
     <nav class="nav-links">
       <a href="/index.html">Home</a>
       <a href="/index.html">Join</a>
-      <a href="/Continuity.html">2023 Robot</a>
+      <a href="/Continuity.html">Continuity</a>
       <!--<a href="/Events.html">Events</a>-->
     </nav>
   </header>
 
-  <header class="header fixed-bottom align-items-center justify-content-center" style="border-radius: 35px; margin: 10vw; margin-top: 0px; margin-bottom: 15px; border-radius: 35px; border: 4px solid rgba(255,255,255,0.8); padding: -35;">
-    <p class="p-3 m-1"style="font-size: 0.8rem;">Signed up recently? Interviews are taking place next week! Want to sign up still? Contact us.</p>
-    <a class="m-1" href="/index.html" style="
-  font-size: .8rem;
-  background-color: #5f0000;
-  border-color: rgba(255, 255, 255, 1);
-  border: 3px solid;
-  border-radius: 15px;
-  ">Contact</a>
-</header>
+  <div style="margin-left: 10px; margin-right: 10px;">
+<!-- INFO -->
+<div style="margin-top: 18vh">
 
-  <div style="width: auto; height: 25px;"></div>
-
-  <div class="container-fluid full-width-container">
-    <div class="main-image background-tint" style="background-image: url(images/TeamBlacksburg.jpg);
-    display: flex; justify-content: center; align-items: center;">
-    <h2 class="text-center stroked-text" style="font-weight: bolder;">Welcome to our dog pound!</h2>
+<!-- HEDR 
+<div style="margin-top: 100px; text-align: center; background-color: transparent;">
+  <div class="container container-cust" style="padding: 20px;">
+      <h2 class="text-center stroked-text" style="font-weight:bolder; color: white; ">Welcome To our Dog Pound</h2>
   </div>
+</div>
+ HEDR -->
 
-  <div style="width: auto; height: 100px;"></div>
+<div class="container container-cust">
+  <div class="row">
+    <div class="col-md-6">
+      <p class="heading">Welcome to our Dog Pound!</p>
+      <!-- Left Column with Image Carousel -->
+      <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5500">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/images/TeamBlacksburgCROPPED.jpg" alt="Team Image" class="d-block w-100 image-glass"
+              style="max-height: 100vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="/images/Balanced.jpg" alt="Team Image" class="d-block w-100 image-glass"
+              style="max-height: 100vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="/images/driveteammea.jpg" alt="Team Image" class="d-block w-100 image-glass"
+              style="max-height: 100vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="/images/incoming.jpg" alt="Team Image" class="d-block w-100 image-glass"
+              style="max-height: 100vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="/images/TeamBus.png" alt="Team Image" class="d-block w-100 image-glass"
+              style="max-height: 100vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="/images/cmkids.jpg" alt="Team Image" class="d-block w-100 image-glass"
+              style="max-height: 100vh;">
+          </div>
+          <!-- Add more carousel items with different images here -->
+        </div>
+        <a class="carousel-control-prev" href="#imageCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#imageCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <!-- Right Column with Team Paragraph -->
+      <div class="container-sm" src>
+        <p class="heading">About Our Team</p>
+        <p>We are the Junkyard Dogs, Team 2106 of Goochland High School, a passionate and dedicated robotics team that
+          competes in the FIRST Robotics Competition. Our team's mission is to inspire and educate students' minds about
+          the exciting world of robotics, engineering, communication, and more!</p>
 
-  <div class="container-inner  scroll-up" style="background-image: url(/textures/Triad.png); background-size: 150rem; background-position: center -100rem; -webkit-background-blend-mode: multiply; -moz-background-blend-mode: multiply; background-blend-mode: multiply; background-color: rgba(0, 0, 0,0.3);">
-  <div class="container-fluid">
+        <p>With a strong focus on innovation and teamwork, we strive to push the boundaries of what is possible each year
+          in our competitions and community. Our mentors build strong relationships with students as they learn about a
+          variety of topics like design, machining, electronics, business, networking, teamwork, and more!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top: 6rem;">
+
+  <div class="container container-cust">
     <div class="row">
-      <div class="col-md-6"><div class="image-container" style="background-image: url('/images/driveteammea.jpg'); margin: 25px;" ></div></div>
-      <div class="col-md-6">
-        <div class="p-4">
-          <h1 class="text-center bold" style="margin-top: 10px;">About Us</h1>
-          <p style="margin-top: 35px;">We are FRC Team 2106, the Junkyard Dogs of Goochland High School. 
-            Founded in 2006, our team has thrived for 16 years, fostering crucial skills in engineering,
-            programming, teamwork, and more. Through practice and competition, our students learn
-            to excel in their future careers and personal lives.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-
-  <div style="width: 10px; height: 50px;"></div>
-
-  <div class="container-fluid px-4">
-    <div class="row g-4">
-      <div class="col-md-4 col-effect mb-4 scroll-up" style="background-image: url(/textures/Hexagon.png); background-size: 150rem; background-position: center -100rem; -webkit-background-blend-mode: multiply; -moz-background-blend-mode: multiply; background-blend-mode: multiply; background-color: rgba(0, 0, 0,0.1);">
-        <div class="p-4">
-          <h1 class="text-center bold" style="margin-top: 10px;">Media</h1>
-          <div class="image-container secondary-image" style="background-image: url('/images/LiftingUp.jpg'); background-size: 38rem;"></div>
-          <div class="button-spacer" style="margin-top: 15px;"></div>
-          <a href="https://www.instagram.com/frc2106gva/" type="button" class="btn button" style=" margin-bottom: 25px;">Library</a>
-        </div>
-      </div>
-  
-      <div class="col-md-4 col-effect mb-4 scroll-up" style="background-image: url(/textures/Hexagon.png); background-size: 150rem; background-position: center -100rem; -webkit-background-blend-mode: multiply; -moz-background-blend-mode: multiply; background-blend-mode: multiply; background-color: rgba(0, 0, 0,0.1);  -webkit-background-blend-mode: multiply; /* For Safari */
-  -moz-background-blend-mode: multiply; /* For Firefox */">
-        <div class="p-4">
-          <h1 class="text-center bold" style="margin-top: 10px;">Join Us</h1>
-          <p class="text-center" style="margin: 0px; margin-bottom: -25px;">Sign up or learn more!</p>
-          <div class="d-flex flex-column">
-            <div class="button-spacer"></div>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYKykLTCv25Z_ih4oKt6s-xyS7TOcEGit4ovYwQbc48zz8vQ/viewform" type="button" class="btn button">Student</a>
-            <div class="button-spacer"></div>
-            <div class="button-spacer" style="background-color: rgba(0,0,0,0); margin: 0px;"></div>
-            <a href="#mission" type="button" class="btn button">Our Mission</a>
-            <div class="button-spacer" style="background-color: rgba(0,0,0,0); margin: 35px"></div>
-            <a href="/poster.html" type="button" class="btn button">Digital Flyer</a>
-          </div>
-        </div>
-      </div>
-      
-  
-      <div class="col-md-4 col-effect mb-4 scroll-up" style="background-image: url(/textures/Hexagon.png); background-size: 150rem; background-position: center -100rem; -webkit-background-blend-mode: multiply; -moz-background-blend-mode: multiply; background-blend-mode: multiply; background-color: rgba(0, 0, 0,0.1);">
-        <div class="p-4">
-          <h1 class="text-center bold" style="margin-top: 10px;">Contact</h1>
-          <div class="image-container secondary-image" style="background-image: url('/images/TeamBus.png'); background-size: 50rem;"></div>
-          <div class="button-spacer" style="margin-top: 15px;"></div>
-          <a href="https://www.instagram.com/frc2106gva/" type="button" class="btn button" style=" margin-bottom: 25px;">Contact</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-
-  <div class="container-inner scroll-right" style="background-image: url(/textures/DotTextureLight.png); background-size: 150rem; background-position: center -100rem; -webkit-background-blend-mode: multiply; -moz-background-blend-mode: multiply; background-blend-mode: multiply; background-color: rgba(0, 0, 0,0.2);">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 hover-effect">
-          <div class="p-4">
-            <div id="mission"></div>
-            <h1 class="text-center bold" style="margin-top: 10px;">What is FIRST?</h1>
-            <p style="margin-top: 35px;">FIRST is a global organization that strives to motivate young individuals 
-              to become future innovators and leaders in science and technology. 
-              With their robotics programs, FIRST offers students the opportunity
-               to gain practical experience in engineering, programming, and critical thinking, 
-               while fostering teamwork, leadership, and communication abilities. 
-               FIRST has made a significant impact on thousands of students worldwide by
-                encouraging them to pursue STEM fields and reach their full potential.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-
-    <div class="container-inner scroll-right" style="background-image: url(/textures/Triad.png); background-size: 150rem; background-position: center -100rem; -webkit-background-blend-mode: multiply; -moz-background-blend-mode: multiply; background-blend-mode: multiply; background-color: rgba(0, 0, 0,0.2);"
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12 hover-effect">
-            <div class="p-4">
-              <h1 class="text-center bold" style="margin-top: 10px;">Who do we look for?</h1>
-              <p style="margin-top: 35px;">Students who embrace the spirit of learning with enthusiasm and passion. 
-                Whether your interests lie in designing mechanical systems or connecting with the community, robotics has many different
-                 roles and learning experiences for you to explore and engage in!</p>
-                 <div class="button-spacer" style="margin: 30px;"></div>
-                <h1 class="text-center bold" style="margin-top: 10px;">Team Members</h1>
-                <p style="margin-top: 35px;">Our team is composed of 18 students and 4 incredible mentors, each with substantial industry experience. 
-                  As our team grows we look for more diverse and eager students to join us as well as new mentors.</p>
+        <div class="col-md-4">
+            <!-- Left Column with Image and Instagram Button -->
+            <p class="text-center heading">View our Media</p>
+            <figure style="text-align: center;">
+                <img src="/images/LiftingUp.jpg" class="image-center-glass">
+            </figure>
+            <p class="text-center">Rewatch match videos, view flyers, and see our social media.</p>
+            <div class="text-center">
+                <a href="https://www.instagram.com/frc2106gva/" class="button-glass" target="_blank">Lets see it!</a>
             </div>
-          </div>
         </div>
-      </div>
-      </div>
-  
-  <div style="width: 10px; height: 80px;"></div>
+        <div class="col-md-4">
+            <!-- Middle Column with Join and Poster Buttons -->
+            <p class="text-center heading">Join our team!</p>
+            <div style="text-align: center; margin-top: 20px;"> <!-- Add margin-top to separate image and buttons -->
+                <figure style="text-align: center;">
+                    <img src="/images/finals.jpg" class="image-center-glass">
+                </figure>
+                <p class="text-center">Description or additional information goes here.</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYKykLTCv25Z_ih4oKt6s-xyS7TOcEGit4ovYwQbc48zz8vQ/viewform" class="button-glass" style="margin-top: 10px; display: block;">Apply Online</a> <!-- Add display: block; for buttons to appear on separate lines -->
+            </div>
+        </div>
+        <div class="col-md-4">
+            <!-- Right Column with Image and Contact Button -->
+            <p class="text-center heading">Contact Us</p>
+            <figure style="text-align: center;">
+                <img src="/images/FunnyAngle.jpg" alt="Your Image" class="image-center-glass">
+            </figure>
+            <p class="text-center">Description or additional information goes here.</p>
+            <div class="text-center">
+                <a href="mailto:sdeloach@glnd.k12.va.us" class="button-glass">Contact</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- INFO -->
 
-  <div class="scrolling">
-    <p class="text-scroll">The website is still a work in progress!</p>
+
+
+
+
+<div class="container container-cust">
+  <!-- Our Sponsors Title -->
+  <p class="text-center heading">Our Sponsors</p>
+  <p class="text-center">Thank you to our amazing sponsors for supporting and funding our team!</p>
+  <div class="row">
+    <!-- Column 1 -->
+    <div class="col-md-3">
+      <img src="/images/LuckStoneLogo.png" alt="Sponsor 1" class="d-block w-100 image-glass-sponsor">
+    </div>
+    <!-- Column 2 -->
+    <div class="col-md-3">
+      <img src="/images/GFITLogo.png" alt="Sponsor 2" class="d-block w-100 image-glass-sponsor">
+    </div>
+    <!-- Column 3 -->
+    <div class="col-md-3">
+      <img src="/images/GRFLogo.png" alt="Sponsor 3" class="d-block w-100 image-glass-sponsor">
+    </div>
+    <!-- Column 4 -->
+    <div class="col-md-3">
+      <img src="/images/TKLLogo.png" alt="Sponsor 4" class="d-block w-100 image-glass-sponsor">
+    </div>
   </div>
-  
-  <script src="homepage.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous">
-  </script>
-  
+</div>
 
-  </body>
+<div style="margin-bottom: 6rem;"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</body>
+
 </html>
