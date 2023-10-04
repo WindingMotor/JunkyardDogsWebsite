@@ -10,7 +10,7 @@ window.addEventListener('scroll', function() {
   else if(prevScrollPos > currentScrollPos) {
     header.style.top = "0";
   } else {
-    header.style.top = `-${header.clientHeight}px`;
+    header.style.top = `-150px`;
   }
   
   prevScrollPos = currentScrollPos;
