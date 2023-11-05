@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team 2106 - The Junkyard Dogs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="new.css">
+</head>
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">The Junkyard Dogs</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sponsors">Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-section">
+    <div class="video-container">
+      <video autoplay loop muted playsinline>
+        <source src="/public/bg-video-comp.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-overlay"></div>
+    </div>
+    <div class="container text-left"> <!-- Add the "text-left" class for left alignment -->
+      <h3>The Junkyard Dogs</h3>
+      <h1>Goochland High School</h1>
+      <h1>Robotics, 16 years of <span id="dynamicText" class="text-dynamic">creating.</span></h1>
+      
+      <!-- Center the buttons on mobile devices -->
+      <div class="d-md-none d-lg-none text-center">
+        <a href="#about" class="btn btn-danger btn-lg" style="margin-top: 2rem;">Learn More</a>
+        <a href="#about" class="btn btn-danger btn-lg" style="margin-top: 2rem; margin-left: 2rem;">Join Us</a>
+      </div>
+      
+      <!-- Keep the buttons left-aligned on desktop and tablet devices -->
+      <div class="d-none d-md-block d-lg-block">
+        <a href="#about" class="btn btn-danger btn-lg" style="margin-top: 2rem;">Learn More</a>
+        <a href="#about" class="btn btn-danger btn-lg" style="margin-top: 2rem; margin-left: 2rem;">Join Us</a>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- About Section -->
+  <section id="about" class="py-5 fade-in-section">
+    <div class="container">
+      <h2 class="text-center">About Us</h2>
+      <p>We are the Junkyard Dogs, Team 2106 of Goochland High School, a passionate and dedicated robotics team that
+        competes in the FIRST Robotics Competition. Our team's mission is to inspire and educate students' minds about
+        the exciting world of robotics, engineering, communication, and more!</p>
+
+      <p>With a strong focus on innovation and teamwork, we strive to push the boundaries of what is possible each year
+        in our competitions and community. Our mentors build strong relationships with students as they learn about a
+        variety of topics like design, machining, electronics, business, networking, teamwork, and more!</p>
+    </div>
+  </section>
+
+  <!-- Sponsors Section -->
+  <section id="sponsors" class="py-1 fade-in-section">
+    <div class="container">
+      <h2 class="text-center">Our Sponsors</h2>
+      <div class="row">
+        <!-- Sponsor Images Go Here -->
+        <div class="col-md-4 col-sm-6 col-6">
+          <img src="/images/LuckStoneLogo.png" alt="Sponsor 1" class="sponsor-img">
+        </div>
+        <div class="col-md-4 col-sm-6 col-6">
+          <img src="/images/GFITLogo.png" alt="Sponsor 2" class="sponsor-img">
+        </div>
+        <div class="col-md-4 col-sm-6 col-6">
+          <img src="/images/GRFLogo.png" alt="Sponsor 3" class="sponsor-img">
+        </div>
+        <div class="col-md-4 col-sm-6 col-6">
+          <img src="/images/TKLLogo.png" alt="Sponsor 3" class="sponsor-img">
+        </div>
+        <div class="col-md-4 col-sm-6 col-6">
+          <img src="/images/LuckStoneLogo.png" alt="Sponsor 3" class="sponsor-img">
+        </div>
+        <div class="col-md-4 col-sm-6 col-6">
+          <img src="/images/GFITLogo.png" alt="Sponsor 3" class="sponsor-img">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Contact Us</h2>
+      <p>Contact information and a contact form can be added here.</p>
+    </div>
+  </section>
+  
+  <!-- Footer Section -->
+  <footer class=" text-center py-3">
+    <div class="container">
+      <p>&copy; 2023 Team 2106 The Junkyard Dogs</p>
+    </div>
+  </footer>
+
+  <script src="dynamicText.js"></script>
+  <!-- Add these script tags to your HTML -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <script src="fadeIn.js"></script>
+
+
+</body>
+</html>
