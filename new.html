@@ -11,22 +11,22 @@
 <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
 
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg">
+  <nav id="navbar" class="navbar navbar-dark navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="#">The Junkyard Dogs</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="/index.html">The Junkyard Dogs</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style=" border-color: transparent;">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="#about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#sponsors">Sponsors</a>
+            <a class="nav-link" href="#sponsors">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#">Robots</a>
           </li>
         </ul>
       </div>
@@ -34,7 +34,7 @@
   </nav>
 
   <section class="hero-section">
-    <div class="video-container">
+    <div class="video-container" style="margin-top: -30px;">
       <video autoplay loop muted playsinline>
         <source src="/public/bg-video-comp.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -48,32 +48,58 @@
       
       <!-- Center the buttons on mobile devices -->
       <div class="d-md-none d-lg-none text-center">
-        <a href="#about" class="btn btn-danger btn-lg" style="margin-top: 2rem;">Learn More</a>
-        <a href="#about" class="btn btn-danger btn-lg" style="margin-top: 2rem; margin-left: 2rem;">Join Us</a>
+        <a href="#about" class="btn btn-danger btn-lg" style="margin-top: 2rem;">Sign-up</a>
+        <a href="#about" class="btn btn-danger btn-lg" style="margin-top: 2rem; margin-left: 2rem;">Sponsor Us</a>
       </div>
       
       <!-- Keep the buttons left-aligned on desktop and tablet devices -->
       <div class="d-none d-md-block d-lg-block">
-        <a href="#about" class="btn btn-danger btn-lg" style="margin-top: 2rem;">Learn More</a>
-        <a href="#about" class="btn btn-danger btn-lg" style="margin-top: 2rem; margin-left: 2rem;">Join Us</a>
+        <a href="#about" class="btn btn-danger btn-lg" style="margin-top: 2rem;">Sign-up</a>
+        <a href="#about" class="btn btn-danger btn-lg" style="margin-top: 2rem; margin-left: 2rem;">Sponsor Us</a>
       </div>
     </div>
   </section>
   
   
-  <!-- About Section -->
-  <section id="about" class="py-5 fade-in-section">
-    <div class="container">
-      <h2 class="text-center">About Us</h2>
-      <p>We are the Junkyard Dogs, Team 2106 of Goochland High School, a passionate and dedicated robotics team that
-        competes in the FIRST Robotics Competition. Our team's mission is to inspire and educate students' minds about
-        the exciting world of robotics, engineering, communication, and more!</p>
+<!-- About Section -->
+<section id="about" class="py-5 fade-in-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Text on the left -->
+        <h2 class="text-center">About Us</h2>
+        <p>We are a passionate and dedicated robotics team that competes in the FIRST Robotics Competition. 
+          Our team's mission is to inspire and educate students' minds about
+          the exciting world of STEM, engineering, and communications.</p>
 
-      <p>With a strong focus on innovation and teamwork, we strive to push the boundaries of what is possible each year
-        in our competitions and community. Our mentors build strong relationships with students as they learn about a
-        variety of topics like design, machining, electronics, business, networking, teamwork, and more!</p>
-    </div>
-  </section>
+        <p>With a strong focus on innovation and teamwork, we strive to push the boundaries of what is possible each year
+          in our competitions and community. Our mentors create strong relationships with students as they learn about a
+          variety of topics that will help them build their powerful futures.</p>
+      </div>
+      <div class="col-md-6 d-flex align-items-center">
+        <!-- Images on the right in a Bootstrap Carousel -->
+        <div id="imageCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaCtnByjv1tTYdoCnn4ngJbegGNeT8WZEJ_fKUdm4W7PHJI1FmZYxC-qWzAMM1x7RsnZ-gn6M959yt370rMYYWJHcC-yLA=s1600" alt="Image 2" class="img-fluid">
+            </div>
+            <div class="carousel-item">
+              <img src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaDzW8tQCm4HyTURcm7MEYzE5uoRzbvC5S6aOWnp0RTFjOSfNJhTnqhTeepmhkJSxOh3C7ro0vKVKtudlDgaqHd4KRJs=s1600" alt="Image 1" class="img-fluid">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+        
+</section>
+
 
   <!-- Sponsors Section -->
   <section id="sponsors" class="py-1 fade-in-section">
@@ -81,7 +107,7 @@
       <h2 class="text-center">Our Sponsors</h2>
       <div class="row">
         <!-- Sponsor Images Go Here -->
-        <div class="col-md-4 col-sm-6 col-6">
+        <div class="col-md-4 col-svery yearm-6 col-6">
           <img src="/images/LuckStoneLogo.png" alt="Sponsor 1" class="sponsor-img">
         </div>
         <div class="col-md-4 col-sm-6 col-6">
@@ -111,7 +137,7 @@
   </section>
   
   <!-- Footer Section -->
-  <footer class=" text-center py-3">
+  <footer class="text-center py-3" id="footer">
     <div class="container">
       <p>&copy; 2023 Team 2106 The Junkyard Dogs</p>
     </div>
@@ -121,7 +147,7 @@
   <!-- Add these script tags to your HTML -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+  <script src=".js"></script>
   <script src="fadeIn.js"></script>
 
 

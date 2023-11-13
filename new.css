@@ -44,6 +44,7 @@
     font-size: 3vw;
     color: var(--font-color);
     font-family: var(--team-font);
+    font-weight: bold;
   }
   
   h3{
@@ -107,11 +108,19 @@
 
   /* Update the navigation bar style */
   .navbar {
-    background-color: var(--team-color) !important;
+    background-color: transparent !important;
+    transition: 2s;
     font-family: var(--team-font);
     color: var(--font-color);
   }
-  
+
+  .navbar-toggler-icon {
+    content: ""; /* Remove the default icon */
+    width: 2rem; /* Set the width of your custom icon */
+    height: 2rem; /* Set the height of your custom icon */
+    background-image: url("/textures/menuicon.svg");
+}
+
   .navbar-brand {
     font-family: var(--team-font);
     color: var(--font-color);
@@ -145,17 +154,60 @@
     
   }
   
+  body{
+    padding-top: 0px;
+  }
+  /* Add a class to make the navbar sticky */
+  .sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: 2s;
+  }
+
+  /* Add a background color to the sticky navbar */
+  .sticky.navbar {
+    background-color: #6e0000de !important;
+    transition: 2s;
+  }
+
+
+  #about{
+    background-color: var(--team-color-gray);
+  }
+  
+  #sponsors {
+    background: linear-gradient(transparent, var(--team-color) 100%) no-repeat bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; /* Make sure the section is a positioned container */
+
+  }
+  
+  
+  #contact{
+    background-color: var(--team-color)
+  }
+  
+  #footer{
+    background: linear-gradient(var(--team-color), transparent 150%) no-repeat bottom center;
+  }
+  
+
  /* Update the hero section styles for video */
- .hero-section {
+.hero-section {
     position: relative;
     text-align: center;
     color: var(--font-color);
     overflow: hidden;
     min-height: 75vh; /* Adjust the minimum height as needed */
-    background: linear-gradient(transparent, var(--team-color-gray)) no-repeat bottom center;
+    background: linear-gradient(var(--team-color), transparent 0%) no-repeat top center, linear-gradient(transparent, var(--team-color-gray)) no-repeat bottom center;
     padding-top: 15vh; /* padding at the top and bottom */
+}
 
-  }
 
   /* Style the video container */
   .video-container {
@@ -224,15 +276,32 @@
   
   .fade-in-section {
     opacity: 0;
-    transition: opacity 1s ease-in;
+    transition: opacity 1.5s ease-in;
   }
   
   .fade-in-section.fade-in {
     opacity: 1;
   }
+
+  .custom-carousel{
+    margin: 3px;
+    background-color: var(--team-color);
+    border: 5px solid var(--team-color); /* Set your desired border properties */
+    overflow: hidden;
+    border-radius: 50px; /* Set your desired border-radius */
+    /* Add any other styles you want */
+  }
+
+  .custom-carousel .img-fluid{
+    border-radius: 50px;
+    
+  }
   
-
-
+  .custom-carousel .carousel-inner .carousel-item img {
+    border-radius: 50px; /* Apply the same border-radius as the parent */
+    transition: border-radius 0s; /* Remove the transition effect */
+  }
+  
  @keyframes btn_danger {
     0% {
         box-shadow: 0 0 var(--button-shadow-size) var(--team-color-lighter);
@@ -294,24 +363,36 @@
 
 
  /* Tablet */
- @media (max-width: 768px){
+ @media (max-width: 1024px){
+
+    p{
+      font-size: 2.125vw;
+    }
 
     h1{
-        font-size: 2vw;
+        font-size: 4.5vw;
     }
       
     h2{
-        font-size: 21vw;
+        font-size: 6.5vw;
     }
 
     h3{
-      font-size: 15vw; 
+      font-size: 8vw; 
+    }
+
+    .hero-section{
+      min-height: 55vw;
     }
 
   }
   
    /* Phone */
   @media (max-width: 480px){
+
+    p{
+      font-size: 5vw;
+    }
 
     h1{
         font-size: 9vw;
@@ -326,7 +407,7 @@
     }
 
     .hero-section{
-        min-height: 50vh;
+        min-height: 160vw;
     }
 
   }
