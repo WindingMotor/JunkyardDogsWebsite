@@ -7,6 +7,11 @@
     font-style: normal;
   }
 
+  @font-face {
+    font-family: BuloExtraBlackItalic;
+    src: url("bulo-extrablackitalic.otf") format("opentype");
+  }
+
  /* Define the team color and font */
  :root {
     --team-color: #6e0000;
@@ -179,7 +184,7 @@
   }
   
   #sponsors {
-    background: linear-gradient(transparent, var(--team-color) 100%) no-repeat bottom center;
+    background: linear-gradient(transparent, var(--team-color) 50%) no-repeat bottom center;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -187,9 +192,19 @@
 
   }
   
-  
-  #contact{
-    background-color: var(--team-color)
+
+
+  #contact {
+    background-blend-mode: multiply;
+    background-color: transparent;
+    background-image: url(textures/Lightning.png);
+    /*background- image: linear-gradient(to bottom, var(--team-color), rgba(255, 255, 255, 0)), url(textures/Triad.png), linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)); */
+    background-size:contain;
+    background-size: 100rem;
+    background-repeat:repeat;
+    background-position: center;
+    position: relative; /* Make sure the section is a positioned container */
+    animation: scrollBackground 30s linear infinite;
   }
   
   #footer{
@@ -269,7 +284,7 @@
   }
   
   .sponsor-img {
-    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    max-width: 80%; /* Ensure the image doesn't exceed its container's width */
     height: auto; /* Maintain the aspect ratio while scaling */
     min-height: calc((100vw - 500px) / 3 / 16 * 9);
   }
@@ -361,7 +376,15 @@
     }
   }
 
-
+  @keyframes scrollBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 0 100%;
+    }
+  }
+  
  /* Tablet */
  @media (max-width: 1024px){
 
@@ -411,3 +434,4 @@
     }
 
   }
+
