@@ -286,7 +286,7 @@
   .sponsor-img {
     max-width: 80%; /* Ensure the image doesn't exceed its container's width */
     height: auto; /* Maintain the aspect ratio while scaling */
-    min-height: calc((100vw - 500px) / 3 / 16 * 9);
+
   }
   
   .fade-in-section {
