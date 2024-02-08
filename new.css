@@ -252,6 +252,21 @@
     z-index: 0; /* Place the overlay behind the content */
   }
 
+  
+  /* Add this to your new.css file */
+  .video-fluid {
+    max-width:  85vw;
+    height:  35vh;
+    border:  5px solid var(--team-color-darker);
+    border-radius:  50px;
+    margin: auto; /* Add this line to center the video */
+  }
+
+  .col-12 .video-fluid {
+    display: block;
+    margin: auto;
+  }
+
 
   .container {
     position: relative;
@@ -316,7 +331,8 @@
     border-radius: 50px; /* Apply the same border-radius as the parent */
     transition: border-radius 0s; /* Remove the transition effect */
   }
-  
+
+
  @keyframes btn_danger {
     0% {
         box-shadow: 0 0 var(--button-shadow-size) var(--team-color-lighter);
