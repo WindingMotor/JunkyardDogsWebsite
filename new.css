@@ -123,11 +123,24 @@
 
   /* Update the navigation bar style */
   .navbar {
+    z-index: 1001;
     background-color: transparent !important;
     transition: 2s;
     font-family: var(--team-font);
     color: var(--font-color);
   }
+
+  /* Update the navigation bar style */
+  .hero-section .navbar {
+    z-index: 1001;
+    background-color: transparent !important;
+    transition: 2s;
+    font-family: var(--team-font);
+    color: var(--font-color);
+    margin-top: -10vh;
+    margin-bottom: 10vh;
+  }
+
 
   .navbar-toggler-icon {
     content: ""; /* Remove the default icon */
@@ -236,6 +249,8 @@
 
   /* Style the video container */
   .video-container {
+    z-index: 1000;
+    margin-top: -50px;
     position: absolute;
     top: 0;
     left: 0;
