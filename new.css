@@ -12,6 +12,16 @@
     src: url("bulo-extrablackitalic.otf") format("opentype");
   }
 
+  @font-face {
+    font-family: 'PaybAck';
+    src: url('PaybAck.ttf') format('opentype'); /* Adjust the path and format */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+  
  /* Define the team color and font */
  :root {
     --team-color: #6e0000;
@@ -21,6 +31,7 @@
     --team-color-gray: #1b1b1b;
     --team-color-secondary: #1b1b1b;
     --team-font: 'Bulo Medium', sans-serif;
+    --team-logo-font: BuloExtraBlackItalic;
     --font-color: rgb(255, 255, 255);
     --font-color-secondary:   #830000;
     --button-shadow-size: 25px;
@@ -58,7 +69,6 @@
     font-family: var(--team-font);
     font-weight: bold;
     transition: 0.5s;
-
   }
   
   h3:hover{
@@ -73,7 +83,7 @@
     font-weight: bold;
     transition: 0.25s;
     border-radius: 5px;
-    font-family: var(--team-font);
+    font-family: var(--team-logo-font); 
     color: var(--font-color);
   }
   
@@ -121,9 +131,9 @@
 
   .navbar-toggler-icon {
     content: ""; /* Remove the default icon */
-    width: 2rem; /* Set the width of your custom icon */
-    height: 2rem; /* Set the height of your custom icon */
-    background-image: url("/textures/menuicon.svg");
+    width: 1.5rem; /* Set the width of your custom icon */
+    height: 1.5rem; /* Set the height of your custom icon */
+    background-image: url("/public/navmenuicon.png");
 }
 
   .navbar-brand {
@@ -332,6 +342,25 @@
     transition: border-radius 0s; /* Remove the transition effect */
   }
 
+  .maestro-background {
+    background-image: url('/public/maestroBackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: ken-burns 15s infinite;
+  }
+
+  @keyframes ken-burns {
+    0% {
+     background-position: center center;
+   }
+    50% {
+     background-position: center  20%;
+   }
+    100% {
+     background-position: center center;
+   }
+ }
 
  @keyframes btn_danger {
     0% {
