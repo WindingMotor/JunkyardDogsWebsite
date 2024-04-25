@@ -373,6 +373,17 @@
     animation: ken-burns 15s infinite;
   }
 
+  .popup {
+    background-color: var(--team-color-darker);
+    border-radius: 15px;
+  }
+
+  .custom-li {
+    font-size: 1.3vw;
+    color: var(--font-color);
+    font-family: var(--team-font);
+  }
+
   @keyframes ken-burns {
     0% {
      background-position: center center;
@@ -495,7 +506,7 @@
     }
     
 
-    h1z{
+    h1{
       font-size: 9vw;
     }
 
@@ -509,6 +520,10 @@
 
     .hero-section{
         min-height: 160vw;
+    }
+
+    .custom-li {
+      font-size: 6vw;
     }
 
   }
