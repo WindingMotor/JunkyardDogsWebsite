@@ -2,19 +2,23 @@
 
  @font-face {
     font-family: 'Bulo Medium';
-    src: url('Bulo Medium.otf') format('opentype'); /* Adjust the path and format */
+    src: url('Bulo Medium.otf') format('opentype'); 
     font-weight: normal;
     font-style: normal;
   }
 
   @font-face {
-    font-family: BuloExtraBlackItalic;
+    font-family: "Bulo Extra Black Italic";
     src: url("bulo-extrablackitalic.otf") format("opentype");
+    font-weight: normal;
+    font-style: italic;
+    /* Fallback font */
+    font-family: 'Bulo Medium', sans-serif;
   }
 
   @font-face {
     font-family: 'PaybAck';
-    src: url('PaybAck.ttf') format('opentype'); /* Adjust the path and format */
+    src: url('PaybAck.ttf') format('opentype'); 
     font-weight: normal;
     font-style: normal;
   }
@@ -31,7 +35,7 @@
     --team-color-gray: #1b1b1b;
     --team-color-secondary: #1b1b1b;
     --team-font: 'Bulo Medium', sans-serif;
-    --team-logo-font: BuloExtraBlackItalic;
+    --team-logo-font: "Bulo Extra Black Italic";
     --font-color: rgb(255, 255, 255);
     --font-color-secondary:   #830000;
     --button-shadow-size: 25px;
@@ -42,6 +46,10 @@
 
   body {
     background-color:var(--team-color-gray);
+  }
+
+  .force-font{
+    font-family: 'Bulo Medium', sans-serif;
   }
   
   p{
